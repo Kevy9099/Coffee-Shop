@@ -1,0 +1,10 @@
+$primary: rgba(2, 56, 14, 0.986);
+$secondary: rgb(156,111,68);
+$dark: rgb(60, 43, 32);
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
