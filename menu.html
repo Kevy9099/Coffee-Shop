@@ -11,137 +11,147 @@
 
 <body class="bg-secondary">
 
-  <!-- Section 1: Nav Bar -->
-  <nav class="navbar bg-dark py-4">
+  <!-- Section 1: Nav Bar 
+    1. Used Bootstrap Grid Layout to space all elements
+    2. Added Navbar at the top of the page. Utilize the class button (btn), width, font-size (fs), margins (m), container (rows & cols), link tags other html pages,
+    and mb-md-0 for responsive layout with less or equal to 768px. 
+  -->
+  <nav class="navbar bg-dark py-4 g-3">
     <div class="container">
       <div class="row w-100">
-        <div class="col-md">
+        <div class="col-md mb-2 mb-md-0">
           <a href="home.html" class="btn btn-primary w-100 fs-4" role="button">Home</a>
         </div>
-        <div class="col-md">
+        <div class="col-md mb-2 mb-md-0">
           <a href="menu.html" class="btn btn-primary w-100 fs-4" role="button">Menu</a>
         </div>
-        <div class="col-md">
+        <div class="col-md mb-2 mb-md-0">
           <a href="contact.html" class="btn btn-primary w-100 fs-4" role="button">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Section 2: Table: Menu (Drinks)-->
+  <!-- Section 2: Table (Drinks)
+    1. Table took 3 hours to complete due to responsive sizing for screens less than 768px. 
+    2. Created two individual container with margins left and right 5px. 
+    3. rows used simple text and font styling along with gap spacing (g-3).
+    4. d-none d-md-block means when the screen is less than 768px, remove or hide the empty div. 
+    5. each col spans 2 columns out of the 12 columns template.
+  -->
   <h1 class="text-white text-center my-4"> Drinks</h1>
   <div class="container my-5">
-    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center">
-      <div class="col-md-2">Coffee</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">Small / 12oz</div>
-      <div class="col-md-2">Medium / 16oz</div>
-      <div class="col-md-2">Large / 20oz</div>
+    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center g-3">
+      <div class="col-md-2 text-center">Coffee</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">Small / 12oz</div>
+      <div class="col-md-2 text-center">Medium / 16oz</div>
+      <div class="col-md-2 text-center">Large / 20oz</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Latte</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$2.00</div>
-      <div class="col-md-2">$2.50</div>
-      <div class="col-md-2">$3.00</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Latte</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$2.00</div>
+      <div class="col-md-2 text-center">$2.50</div>
+      <div class="col-md-2 text-center">$3.00</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Americano</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$1.50</div>
-      <div class="col-md-2">$2.00</div>
-      <div class="col-md-2">$2.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Americano</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$1.50</div>
+      <div class="col-md-2 text-center">$2.00</div>
+      <div class="col-md-2 text-center">$2.50</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-2">Cold Brew</div>
-      <div class="col-2"></div>
-      <div class="col-2">$2.50</div>
-      <div class="col-2">$3.00</div>
-      <div class="col-2">$3.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Mocha</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$1.50</div>
+      <div class="col-md-2 text-center">$2.00</div>
+      <div class="col-md-2 text-center">$2.50</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Mocha</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$2.00</div>
-      <div class="col-md-2">$2.25</div>
-      <div class="col-md-2">$2.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3 ">
+      <div class="col-md-2 text-center">Cold Brew</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$2.00</div>
+      <div class="col-md-2 text-center">$2.25</div>
+      <div class="col-md-2 text-center mb-3">$2.50</div>
     </div>
 
     <!-- Section 2: Table: Menu (Teas)-->
-    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center">
-      <div class="col-md-2">Teas</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">Small / 12oz</div>
-      <div class="col-md-2">Medium / 16oz</div>
-      <div class="col-md-2">Large / 20oz</div>
+    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center g-3">
+      <div class="col-md-2 text-center">Teas</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">Small / 12oz</div>
+      <div class="col-md-2 text-center">Medium / 16oz</div>
+      <div class="col-md-2 text-center">Large / 20oz</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Matcha</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$2.00</div>
-      <div class="col-md-2">$2.25</div>
-      <div class="col-md-2">$2.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Matcha</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$2.00</div>
+      <div class="col-md-2 text-center">$2.25</div>
+      <div class="col-md-2 text-center">$2.50</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Green</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$1.00</div>
-      <div class="col-md-2">$1.25</div>
-      <div class="col-md-2">$1.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Green</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$1.00</div>
+      <div class="col-md-2 text-center">$1.25</div>
+      <div class="col-md-2 text-center">$1.50</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Black</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$1.00</div>
-      <div class="col-md-2">$1.25</div>
-      <div class="col-md-2">$1.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Black</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$1.00</div>
+      <div class="col-md-2 text-center">$1.25</div>
+      <div class="col-md-2 text-center">$1.50</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">Earl Grey</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2">$1.00</div>
-      <div class="col-md-2">$1.25</div>
-      <div class="col-md-2">$1.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">Earl Grey</div>
+      <div class="col-md-2 text-center d-none d-md-block"></div>
+      <div class="col-md-2 text-center">$1.00</div>
+      <div class="col-md-2 text-center">$1.25</div>
+      <div class="col-md-2 text-center">$1.50</div>
     </div>
   </div>
 
   <!-- Section 2: Table: Menu (Foods)-->
   <h1 class="text-white text-center my-4">Foods</h1>
   <div class="container">
-    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center">
-      <div class="col-md-2">Sour Dough Bread</div>
-      <div class="col-md-2">Pumpkin Bread</div>
-      <div class="col-md-2">Chocolate Chunk Cookie</div>
-      <div class="col-md-2">Coffee Cake</div>
+    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center g-3">
+      <div class="col-md-2 text-center">Sour Dough Bread</div>
+      <div class="col-md-2 text-center">Pumpkin Bread</div>
+      <div class="col-md-2 text-center">Chocolate Chunk Cookie</div>
+      <div class="col-md-2 text-center">Coffee Cake</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">$5.00</div>
-      <div class="col-md-2">$5.00</div>
-      <div class="col-md-2">$2.50</div>
-      <div class="col-md-2">$3.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">$5.00</div>
+      <div class="col-md-2 text-center">$5.00</div>
+      <div class="col-md-2 text-center">$2.50</div>
+      <div class="col-md-2 text-center mb-3">$3.50</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center">
-      <div class="col-md-2">Homemade Chili</div>
-      <div class="col-md-2">Tamales</div>
-      <div class="col-md-2">BLT Sandwich</div>
-      <div class="col-md-2">Tuna Melt</div>
+    <div class="row fw-bold border-bottom py-2 bg-dark text-white justify-content-center g-3">
+      <div class="col-md-2 text-center">Homemade Chili</div>
+      <div class="col-md-2 text-center">Tamales</div>
+      <div class="col-md-2 text-center">BLT Sandwich</div>
+      <div class="col-md-2 text-center">Tuna Melt</div>
     </div>
 
-    <div class="row fw-bold border-bottom py-2 justify-content-center">
-      <div class="col-md-2">$5.00</div>
-      <div class="col-md-2">$5.00</div>
-      <div class="col-md-2">$2.50</div>
-      <div class="col-md-2">$3.50</div>
+    <div class="row fw-bold border-bottom py-2 justify-content-center g-3">
+      <div class="col-md-2 text-center">$5.00</div>
+      <div class="col-md-2 text-center">$5.00</div>
+      <div class="col-md-2 text-center">$2.50</div>
+      <div class="col-md-2 text-center">$3.50</div>
     </div>
   </div>
 

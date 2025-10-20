@@ -10,56 +10,71 @@
 </head>
 
 <body class="bg-secondary">
-  <!-- Section 1: Nav Bar -->
-  <nav class="navbar bg-dark py-4">
+
+  <!-- Section 1: Nav Bar 
+    1. Used Bootstrap Grid Layout to space all elements
+    2. Added Navbar at the top of the page. Utilize the class button (btn), width, font-size (fs), margins (m), container (rows & cols), link tags other html pages,
+    and mb-md-0 for responsive layout with less or equal to 768px. 
+  -->
+  <nav class="navbar bg-dark py-4 g-3">
     <div class="container">
       <div class="row w-100">
-        <div class="col-md">
+        <div class="col-md mb-2 mb-md-0">
           <a href="home.html" class="btn btn-primary w-100 fs-4" role="button">Home</a>
         </div>
-        <div class="col-md">
+        <div class="col-md mb-2 mb-md-0">
           <a href="menu.html" class="btn btn-primary w-100 fs-4" role="button">Menu</a>
         </div>
-        <div class="col-md">
+        <div class="col-md mb-2 mb-md-0">
           <a href="contact.html" class="btn btn-primary w-100 fs-4" role="button">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Section 2: Form -->
+  <!-- Section 2: Form 
+    1. The form section took an hour to complete. 
+    2. Four divs fo email, first & last name, message (textarea) and submit button.
+    3. Each input is required to submit the button ( href="#"). 
+    4. The email input requires the email to have a "@example.com" to submit.
+    5. THe text area takes 3 rows initially, but can be extended.
+  -->
   <div class="container my-5">
     <form>
       <div class="row mb-3">
         <div class="col-md-6 py-2">
           <label for="email" class="form-label">Email address: </label>
-          <input type="email" class="form-control" id="email" placeholder="emailname@example.com">
+          <input type="email" class="form-control" id="email" placeholder="emailname@example.com" required>
         </div>
 
         <div class="col-md-6 py-2">
           <label for="firstname" class="form-label">First Name: </label>
-          <input type="firstname" class="form-control" id="firstname" placeholder="kevin">
+          <input type="firstname" class="form-control" id="firstname" placeholder="kevin" required>
         </div>
 
         <div class="col-md-6 py-2">
           <label for="lastname" class="form-label">Last Name: </label>
-          <input type="lastname" class="form-control" id="lastname" placeholder="mak">
+          <input type="lastname" class="form-control" id="lastname" placeholder="mak" required>
         </div>
 
         <div class="col-md-6 py-2">
           <label for="textarea" class="form-label">Message</label>
-          <textarea class="form-control" id="textarea" rows="3" placeholder="Dear Owner,"></textarea>
+          <textarea class="form-control" id="textarea" rows="3" placeholder="Dear Owner," required></textarea>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12 text-center py-2">
-          <button type="submit" class="btn btn-primary px-5">Submit</button>
+          <button type="submit" value="Submit" class="btn btn-primary px-5">Submit</button>
         </div>
       </div>
     </form>
   </div>
 
+  <!-- Section 3: Contact
+    1. Added for fun, information is not real and is only used for educational purposes. 
+    2. container-fluid is a flex container with width: 100% at all breakpoints.
+  -->
   <h4 class="text-center text-white">Contact Us</h4>
   <div class="container-fluid">
     <p class="text-center fw-bold">Phone: XXX-XXX-XXXX</p>
